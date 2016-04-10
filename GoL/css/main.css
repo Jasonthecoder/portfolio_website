@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(0, 0%, 40%);
+}
+
+.container {
+  background: hsl(0, 0%, 15%);
+  box-shadow: inset 0 0 5px 5px hsla(0, 0%, 40%, 1);
+  width: 80%;
+  margin: 1em auto;
+  padding: 1em 1em;
+  border-radius: 10px;
+  width: 800px;
+}
+
+#canvasContainer {
+  display: inline-block;
+  vertical-align: top;
+  width: 600px;
+}
+
+#buttonContainer {
+  display: inline-block;
+  width: 150px;
+}
+
+#myCanvas {
+  display: block;
+  margin: 0 auto;
+}
+
+button {
+  margin: 1em;
+  height: 43px;
+  width: 70px;
+  font-size: 16px;
+  background: hsl(240, 100%, 80%);
+  color: hsl(240, 100%, 20%);
+  border: 1px solid hsla(0, 0%, 0%, 0.5);
+  box-shadow: 5px 5px 10px black;
+  border-radius: 20px;
+}

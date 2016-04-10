@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <title>Matthew Pagan | Web Developer</title>
+      <link rel="stylesheet" href="css/normalize.css">
+      <link href='https://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,400italic,700,700italic,800' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <a href="index.html" id="logo">
+        <h1>Matthew Pagan</h1>
+        <h2>Web Developer</h2>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="selected">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+      <div id="wrapper">
+        <section>
+
+          <h3>Portfolio</h3>
+          <p>
+This website will serve as my portfolio, demonstrating my skills as a software designer and a front-end web developer. As I create more projects, I will display them here.
+          </p>
+
+          <a href="GoL/GoL.html">
+          <h4>Game of Life Simulator</h4>
+          <img src="img/GoL.png"></a>
+          <p>
+British mathematician John Horton Conway devised a cellular automaton known as The Game of Life. This is a simulator that runs his game. The game is made up of a 2d grid of cells which interact with their cellular neighbors (up, down, left, right, and diagonally). Each cell follows four rules:
+          </p>
+          <ol>
+            <li>Any live cell with fewer than two live neighbours dies, as if caused by under-population.</li>
+            <li>Any live cell with two or three live neighbours lives on to the next generation.</li>
+            <li>Any live cell with more than three live neighbours dies, as if by over-population.</li>
+            <li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</li>
+          </ol>
+
+          <a href="coin_collector/coin_collector.html">
+          <h4>Coin Collector</h4>
+          <img src="img/coin_collector.png"></a>
+          <p>
+This is a ASCII 2D coin collecting game. You control the player with the keyboard arrow keys and the game keeps track of your progress as you collect items on the game board. I used this project to practice using closures to create a private namespace for the scripts variables.
+          </p>
+
+          <a href="random_colors/random_colors.html">
+          <h4>Random Color Generator</h4>
+          <img src="img/random_colors.png"></a>
+          <p>
+This is my <a href="random_colors/random_colors.html">Random Color Generator</a>. It generates random colors based on random values for hue, saturation, and lightness. There is also an interface which allows the user to change the range of random values for those color properties.
+          </p>
+
+          <a href="breakout/breakout.html">
+          <h4>Breakout</h4>
+          <img src="img/breakout.png"></a>
+          <p>
+Here is the classic <a href="breakout/breakout.html">Breakout</a> game. Coded in pure JavaScript.
+          </p>
+          
+        </section>
+        <footer>
+          <a href="http://twitter.com/mastapegs">
+            <img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon">
+          </a>
+            <p>&copy; 2016 Matthew Pagan.</p>
+        </footer>
+      </div>
+  </body>
+</html>
