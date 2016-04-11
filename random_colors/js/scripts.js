@@ -32,7 +32,7 @@ var
     var html = "";
     var colorObject;
     currentSetting = colorProp;
-    for ( var i = 1; i <= 40; i++ ) {
+    for ( var i = 1; i <= 55; i++ ) {
       colorObject = new Color(currentSetting);
       colorHTML = colorObject.toHTML()
       html += "<div class='number' style='background: " + colorHTML + "; '></div>";
