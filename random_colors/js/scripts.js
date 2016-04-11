@@ -25,7 +25,8 @@ var
     minLightness: 40,
     maxLightness: 70
   },
-  currentSetting = defaultProps;
+  currentSetting,
+  tempProps;
 
   function createColors(colorProp) {
     var html = "";
@@ -42,135 +43,96 @@ var
   $(createColors);
   
   $("#all_lightest").on("click", function(){
-    createColors({
-      minHue: 0,
-      maxHue: 360,
-      minSaturation: 40,
-      maxSaturation: 70,
-      minLightness: 70,
-      maxLightness: 90
-    });
+    tempProps = defaultProps;
+    tempProps.minLightness = 70;
+    tempProps.maxLightness = 90;
+    createColors(tempProps);
   });
   $("#all_lighter").on("click", function(){
-    createColors({
-      minHue: 0,
-      maxHue: 360,
-      minSaturation: 40,
-      maxSaturation: 70,
-      minLightness: 60,
-      maxLightness: 80
-    });
+    tempProps = defaultProps;
+    tempProps.minLightness = 60;
+    tempProps.maxLightness = 80;
+    createColors(tempProps);
   });
   $("#all").on("click", function(){
-    createColors(defaultProps);
+    tempProps = defaultProps;
+    tempProps.minLightness = 40;
+    tempProps.maxLightness = 70;
+    createColors(tempProps);
   });
   $("#all_darker").on("click", function(){
-    createColors({
-      minHue: 0,
-      maxHue: 360,
-      minSaturation: 40,
-      maxSaturation: 70,
-      minLightness: 30,
-      maxLightness: 50
-    });
+    tempProps = defaultProps;
+    tempProps.minLightness = 30;
+    tempProps.maxLightness = 50;
+    createColors(tempProps);
   });
   $("#all_darkest").on("click", function(){
-    createColors({
-      minHue: 0,
-      maxHue: 360,
-      minSaturation: 40,
-      maxSaturation: 70,
-      minLightness: 20,
-      maxLightness: 30
-    });
+    tempProps = defaultProps;
+    tempProps.minLightness = 20;
+    tempProps.maxLightness = 40;
+    createColors(tempProps);
   });
 
   $("#warm_lightest").on("click", function(){
-    createColors({
-      minHue: -10,
-      maxHue: 70,
-      minSaturation: 40,
-      maxSaturation: 70,
-      minLightness: 70,
-      maxLightness: 90
-    });
+    tempProps = warmProps;
+    tempProps.minLightness = 70;
+    tempProps.maxLightness = 90;
+    createColors(tempProps);
   });
   $("#warm_lighter").on("click", function(){
-    createColors({
-      minHue: -10,
-      maxHue: 70,
-      minSaturation: 40,
-      maxSaturation: 70,
-      minLightness: 60,
-      maxLightness: 80
-    });
+    tempProps = warmProps;
+    tempProps.minLightness = 60;
+    tempProps.maxLightness = 80;
+    createColors(tempProps);
   });
   $("#warm").on("click", function(){
-    createColors(warmProps);
+    tempProps = warmProps;
+    tempProps.minLightness = 40;
+    tempProps.maxLightness = 70;
+    createColors(tempProps);
   });
   $("#warm_darker").on("click", function(){
-    createColors({
-      minHue: -10,
-      maxHue: 70,
-      minSaturation: 40,
-      maxSaturation: 70,
-      minLightness: 30,
-      maxLightness: 50
-    });
+    tempProps = warmProps;
+    tempProps.minLightness = 30;
+    tempProps.maxLightness = 50;
+    createColors(tempProps);
   });
   $("#warm_darkest").on("click", function(){
-    createColors({
-      minHue: -10,
-      maxHue: 70,
-      minSaturation: 40,
-      maxSaturation: 70,
-      minLightness: 20,
-      maxLightness: 30
-    });
+    tempProps = warmProps;
+    tempProps.minLightness = 20;
+    tempProps.maxLightness = 40;
+    createColors(tempProps);
   });
 
   $("#cool_lightest").on("click", function(){
-    createColors({
-      minHue: 120,
-      maxHue: 260,
-      minSaturation: 40,
-      maxSaturation: 70,
-      minLightness: 70,
-      maxLightness: 90
-    });
+    tempProps = coolProps;
+    tempProps.minLightness = 70;
+    tempProps.maxLightness = 90;
+    createColors(tempProps);
   });
   $("#cool_lighter").on("click", function(){
-    createColors({
-      minHue: 120,
-      maxHue: 260,
-      minSaturation: 40,
-      maxSaturation: 70,
-      minLightness: 60,
-      maxLightness: 80
-    });
+    tempProps = coolProps;
+    tempProps.minLightness = 60;
+    tempProps.maxLightness = 80;
+    createColors(tempProps);
   });
   $("#cool").on("click", function(){
-    createColors(coolProps);
+    tempProps = coolProps;
+    tempProps.minLightness = 40;
+    tempProps.maxLightness = 70;
+    createColors(tempProps);
   });
   $("#cool_darker").on("click", function(){
-    createColors({
-      minHue: 120,
-      maxHue: 260,
-      minSaturation: 40,
-      maxSaturation: 70,
-      minLightness: 30,
-      maxLightness: 50
-    });
+    tempProps = coolProps;
+    tempProps.minLightness = 30;
+    tempProps.maxLightness = 50;
+    createColors(tempProps);
   });
   $("#cool_darkest").on("click", function(){
-    createColors({
-      minHue: 120,
-      maxHue: 260,
-      minSaturation: 40,
-      maxSaturation: 70,
-      minLightness: 20,
-      maxLightness: 30
-    });
+    tempProps = coolProps;
+    tempProps.minLightness = 20;
+    tempProps.maxLightness = 40;
+    createColors(tempProps);
   });
 
 })();
