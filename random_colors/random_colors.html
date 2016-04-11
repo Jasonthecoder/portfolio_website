@@ -8,92 +8,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+
     <div class="container" id="colorOutput">
     </div>
-    <div class="container" id="controls">
+
+    <div class="container" id="ui">
       <div class="column">
-        <label>Minimum Hue</label>
-        <select id="minHue" onchange="createColors()">
-          <option value="0" selected="selected">0 - Red</option>
-          <option value="60">60 - Yellow</option>
-          <option value="120">120 - Green</option>
-          <option value="180">180 - Cyan</option>
-          <option value="240">240 - Blue</option>
-          <option value="300">300 - Magenta</option>
-          <option value="360">360 - Red</option>
-        </select><br>
-        <label>Maximum Hue</label>
-        <select id="maxHue" onchange="createColors()">
-          <option value="0">0 - Red</option>
-          <option value="60">60 - Yellow</option>
-          <option value="120">120 - Green</option>
-          <option value="180">180 - Cyan</option>
-          <option value="240">240 - Blue</option>
-          <option value="300">300 - Magenta</option>
-          <option value="360" selected="selected">360 - Red</option>
-        </select>
-      </div><!--/.column-->
+        <button id="all_lightest">Lightest</button>
+        <button id="all_lighter">Lighter</button>
+        <button id="all">All Colors</button>
+        <button id="all_darker">Darker</button>
+        <button id="all_darkest">Darkest</button>
+      </div>
       <div class="column">
-        <label>Minimum Saturation</label>
-        <select id="minSaturation" onchange="createColors()">
-          <option value="0">0</option>
-          <option value="10">10</option>
-          <option value="20">20</option>
-          <option value="30">30</option>
-          <option value="40" selected="selected">40</option>
-          <option value="50">50</option>
-          <option value="60">60</option>
-          <option value="70">70</option>
-          <option value="80">80</option>
-          <option value="90">90</option>
-          <option value="100">100</option>
-        </select><br>
-        <label>Maximum Saturation</label>
-        <select id="maxSaturation" onchange="createColors()">
-          <option value="0">0</option>
-          <option value="10">10</option>
-          <option value="20">20</option>
-          <option value="30">30</option>
-          <option value="40">40</option>
-          <option value="50">50</option>
-          <option value="60">60</option>
-          <option value="70" selected="selected">70</option>
-          <option value="80">80</option>
-          <option value="90">90</option>
-          <option value="100">100</option>
-        </select>
-      </div><!--/.column-->
+        <button id="warm_lightest">Lightest</button>
+        <button id="warm_lighter">Lighter</button>
+        <button id="warm">Warm Colors</button>
+        <button id="warm_darker">Darker</button>
+        <button id="warm_darkest">Darkest</button>
+      </div>
       <div class="column">
-        <label>Minimum Lightness</label>
-        <select id="minLightness" onchange="createColors()">
-          <option value="0">0</option>
-          <option value="10">10</option>
-          <option value="20">20</option>
-          <option value="30">30</option>
-          <option value="40" selected="selected">40</option>
-          <option value="50">50</option>
-          <option value="60">60</option>
-          <option value="70">70</option>
-          <option value="80">80</option>
-          <option value="90">90</option>
-          <option value="100">100</option>
-        </select><br>
-        <label>Maximum Lightness</label>
-        <select id="maxLightness" onchange="createColors()">
-          <option value="0">0</option>
-          <option value="10">10</option>
-          <option value="20">20</option>
-          <option value="30">30</option>
-          <option value="40">40</option>
-          <option value="50">50</option>
-          <option value="60">60</option>
-          <option value="70" selected="selected">70</option>
-          <option value="80">80</option>
-          <option value="90">90</option>
-          <option value="100">100</option>
-        </select>
-      </div><!--/.column-->
-    </div><!--/.container-->
+        <button id="cool_lightest">Lightest</button>
+        <button id="cool_lighter">Lighter</button>
+        <button id="cool">Cool Colors</button>
+        <button id="cool_darker">Darker</button>
+        <button id="cool_darkest">Darkest</button>
+      </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
     <script src="js/Color.js"></script>
     <script src="js/scripts.js"></script>
   </body>
