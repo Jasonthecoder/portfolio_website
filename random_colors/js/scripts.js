@@ -32,10 +32,10 @@ var
     var html = "";
     var colorObject;
     currentSetting = colorProp;
-    for ( var i = 1; i <= 100; i++ ) {
+    for ( var i = 1; i <= 32; i++ ) {
       colorObject = new Color(currentSetting);
       colorHTML = colorObject.toHTML()
-      html += "<div class='number' style='background: " + colorHTML + "; '>" + i + "</div>";
+      html += "<div class='number' style='background: " + colorHTML + "; '></div>";
     }
     $("#colorOutput").html(html);
   }  
