@@ -162,7 +162,8 @@ p {
 }
 
 .skill-column {
-    width: 50%;
+    width: 45%;
+    margin: 0 2.5%;
     float: left;
 }
 
