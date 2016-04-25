@@ -167,6 +167,10 @@ p {
     float: left;
 }
 
+.skill-column ul {
+    padding-left: 0;
+}
+
 
 
 
