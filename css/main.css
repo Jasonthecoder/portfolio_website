@@ -141,6 +141,10 @@ p {
  PAGE: ABOUT
  ******************************/
 
+.about-section {
+    margin-bottom: 2em;
+}
+
 .profile-photo {
     display: block;
     max-width: 150px;

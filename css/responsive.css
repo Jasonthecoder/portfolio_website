@@ -34,6 +34,10 @@
       PAGE: ABOUT
       ******************************/
 
+      .about-section {
+          margin-bottom: 0;
+      }
+
       .profile-photo {
           float: left;
           margin: 0 5% 80px 0;
