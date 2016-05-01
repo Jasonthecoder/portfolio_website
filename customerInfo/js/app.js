@@ -1,6 +1,6 @@
 var app = angular.module("myApp", []);
 
-app.controller("DataController", ["$scope", function($scope){
+app.controller("DataController", function($scope){
 
   var data = [
     {
@@ -32,4 +32,4 @@ app.controller("DataController", ["$scope", function($scope){
     $scope.newCustomer = {};
   }
 
-}]); // DataController
+}); // DataController
