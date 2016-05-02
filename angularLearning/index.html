@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="myApp">
   <head>
-    <base href="angularLearning">
+    <base href="/angularLearning/">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,13 +20,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/" ng-click="setPanel(0)">AngularJS</a>
+        <a class="navbar-brand" href="/angularLearning" ng-click="setPanel(0)">AngularJS</a>
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li ng-class="{ active:panel===1 }"><a href="/binding" ng-click="setPanel(1)">2 Way Binding</a></li>
-          <li ng-class="{ active:panel===2 }"><a href="#" ng-click="setPanel(2)">Subject 1</a></li>
-          <li ng-class="{ active:panel===3 }"><a href="#" ng-click="setPanel(3)">Subject 2</a></li>
+          <li ng-class="{ active:panel===1 }"><a href="/angularLearning/binding" ng-click="setPanel(1)">2 Way Binding</a></li>
+          <li ng-class="{ active:panel===2 }"><a href="/angularLearning" ng-click="setPanel(2)">Subject 1</a></li>
+          <li ng-class="{ active:panel===3 }"><a href="/angularLearning" ng-click="setPanel(3)">Subject 2</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
