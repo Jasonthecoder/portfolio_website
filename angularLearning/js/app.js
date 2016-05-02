@@ -16,6 +16,21 @@ angular.module("myApp", ["ngRoute"])
   };
 })
 
+.controller("CustomerController", function($scope, $http){
+  $scope.customers = [];
+  $scope.newCustomer = {};
+
+  $http.get("js/customers.json").success(function(data){
+    $scope.customers = data;
+  });
+
+  $scope.addCustomer = function(){
+    $scope.customers.push($scope.newCustomer);
+    $scope.newCustomer = {};
+  };
+  
+})
+
 .config(function($routeProvider, $locationProvider){
 
   $locationProvider.html5Mode(true);
@@ -28,6 +43,10 @@ angular.module("myApp", ["ngRoute"])
   .when('/binding', {
     templateUrl: "partials/binding.html",
     controller: "BindingController"
+  })
+  .when("/customerForm", {
+    templateUrl: "partials/customerForm.html",
+    controller: "CustomerController"
   })
   .otherwise({ redirectTo: "/" });
 

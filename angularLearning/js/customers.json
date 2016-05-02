@@ -1,0 +1,46 @@
+[
+  { 
+    "name": "Matthew Pagan",
+    "email": "mpagan@matthewpagan.com",
+    "phone": "401-332-7084",
+    "address": {
+      "street": "7 Cross Rd.",
+      "city": "Johnston",
+      "state": "RI",
+      "zip": "02919"
+    }
+  },
+  { 
+    "name": "John Smith",
+    "email": "jsmith@gmail.com",
+    "phone": "857-254-3211",
+    "address": {
+      "street": "8 Mary Ln.",
+      "city": "Wichita",
+      "state": "KS",
+      "zip": "67201"
+    }
+  },
+  { 
+    "name": "John Doe",
+    "email": "johnDoe@gmail.com",
+    "phone": "203-857-4577",
+    "address": {
+      "street": "1157 Circle Dr.",
+      "city": "Boston",
+      "state": "MA",
+      "zip": "02108"
+    }
+  },
+  { 
+    "name": "Jane Doe",
+    "email": "janeDoe@gmail.com",
+    "phone": "401-352-1855",
+    "address": {
+      "street": "17 Quaker St.",
+      "city": "Providence",
+      "state": "RI",
+      "zip": "02909"
+    }
+  }
+]

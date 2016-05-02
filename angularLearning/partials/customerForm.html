@@ -1,0 +1,47 @@
+<div class="container">
+
+  <h1>Customer Information</h1>
+
+  <table class="table table-condensed">
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Address</th>
+    </tr> 
+    <tr ng-repeat="customer in customers">
+      <td>{{ customer.name }}</td>
+      <td>{{ customer.email }}</td>
+      <td>{{ customer.phone }}</td>
+      <td>
+        {{ customer.address.street }} <br>
+        {{ customer.address.city }}
+        {{ customer.address.state }}, {{ customer.address.zip }}
+      </td>
+    </tr> 
+  </table>
+
+  <form class="form-horizontal">
+    
+    <div>
+      <label for="name" class="col-xs-2">Name:</label>
+      <input id="name" class="col-xs-10" type="text" ng-model="newCustomer.name">
+    </div>
+
+    <div>
+      <label for="email" class="col-xs-2">Email:</label>
+      <input id="email" class="col-xs-10" type="email" ng-model="newCustomer.email">
+    </div>
+
+    <div>
+      <label for="phone" class="col-xs-2">Phone:</label>
+      <input id="phone" class="col-xs-10" type="tel" ng-model="newCustomer.phone">
+    </div>
+
+    <button class="btn btn-primary col-xs-10 col-xs-offset-2" ng-click="addCustomer()">
+      <span class="glyphicon glyphicon-plus"></span>
+    </button>
+
+  </form>
+
+</div>
