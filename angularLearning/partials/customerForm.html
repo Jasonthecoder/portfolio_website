@@ -31,40 +31,51 @@
 
   <form class="form-horizontal">
     
-    <div class="clearfix">
-      <label for="name" class="col-xs-2 text-right">Name:</label>
-      <input id="name" class="col-xs-8" type="text" ng-model="newCustomer.name">
-    </div>
+    <fieldset class="fieldset">
 
-    <div class="clearfix">
-      <label for="email" class="col-xs-2 text-right">Email:</label>
-      <input id="email" class="col-xs-8" type="email" ng-model="newCustomer.email">
-    </div>
+      <legend>Customer Information</legend>
 
-    <div class="clearfix">
-      <label for="phone" class="col-xs-2 text-right">Phone:</label>
-      <input id="phone" class="col-xs-8" type="tel" ng-model="newCustomer.phone">
-    </div>
+      <div class="clearfix">
+        <label for="name" class="col-xs-2 text-right">Name:</label>
+        <input id="name" class="col-xs-8" type="text" ng-model="newCustomer.name">
+      </div>
 
-    <div class="clearfix">
-      <label for="street" class="col-xs-2 text-right">Street:</label>
-      <input id="street" class="col-xs-8" type="text" ng-model="newCustomer.address.street">
-    </div>
+      <div class="clearfix">
+        <label for="email" class="col-xs-2 text-right">Email:</label>
+        <input id="email" class="col-xs-8" type="email" ng-model="newCustomer.email">
+      </div>
 
-    <div class="clearfix">
-      <label for="city" class="col-xs-2 text-right">City:</label>
-      <input id="city" class="col-xs-8" type="text" ng-model="newCustomer.address.city">
-    </div>
+      <div class="clearfix">
+        <label for="phone" class="col-xs-2 text-right">Phone:</label>
+        <input id="phone" class="col-xs-8" type="tel" ng-model="newCustomer.phone">
+      </div>
 
-    <div class="clearfix">
-      <label for="state" class="col-xs-2 text-right">State:</label>
-      <input id="state" class="col-xs-8" type="text" ng-model="newCustomer.address.state">
-    </div>
+    </fieldset>
 
-    <div class="clearfix">
-      <label for="zip" class="col-xs-2 text-right">Zip:</label>
-      <input id="zip" class="col-xs-8" type="text" ng-model="newCustomer.address.zip">
-    </div>
+    <legend>Address</legend>
+
+      <fieldset class="fieldset">
+      <div class="clearfix">
+        <label for="street" class="col-xs-2 text-right">Street:</label>
+        <input id="street" class="col-xs-8" type="text" ng-model="newCustomer.address.street">
+      </div>
+
+      <div class="clearfix">
+        <label for="city" class="col-xs-2 text-right">City:</label>
+        <input id="city" class="col-xs-8" type="text" ng-model="newCustomer.address.city">
+      </div>
+
+      <div class="clearfix">
+        <label for="state" class="col-xs-2 text-right">State:</label>
+        <input id="state" class="col-xs-8" type="text" ng-model="newCustomer.address.state">
+      </div>
+
+      <div class="clearfix">
+        <label for="zip" class="col-xs-2 text-right">Zip:</label>
+        <input id="zip" class="col-xs-8" type="text" ng-model="newCustomer.address.zip">
+      </div>
+
+    </fieldset>
 
     <div class="clearfix">
     <button class="btn btn-primary col-xs-2 col-xs-offset-2" ng-click="addCustomer()">
