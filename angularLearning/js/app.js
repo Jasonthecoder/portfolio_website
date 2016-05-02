@@ -22,11 +22,11 @@ angular.module("myApp", ["ngRoute"])
 
   $routeProvider
   .when("/", {
-    templateUrl: "/angularLearning/partials/index.html",
+    templateUrl: "partials/index.html",
     controller: "IndexController"
   })
   .when('/binding', {
-    templateUrl: "/angularLearning/partials/binding.html",
+    templateUrl: "partials/binding.html",
     controller: "BindingController"
   })
   .otherwise({ redirectTo: "/" });
