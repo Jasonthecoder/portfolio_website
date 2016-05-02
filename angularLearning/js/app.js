@@ -1,10 +1,14 @@
 angular.module("myApp", ["ngRoute"])
 
 .controller("BindingController", function($scope){
+
   $scope.name = "";
+  $scope.quantity = 12;
+  $scope.price = 3;
   $scope.isEmpty = function(){
     return $scope.name === "";
   };
+
 })
 
 .controller("NavController", function($scope){

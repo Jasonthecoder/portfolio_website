@@ -1,0 +1,5 @@
+.bottom-border {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid hsl(0, 0%, 60%);
+}

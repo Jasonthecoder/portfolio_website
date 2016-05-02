@@ -1,7 +1,38 @@
 <div class="container">
 	
-  <h1>2 Way Binding</h1>
-	<input type="text" ng-model="name" placeHolder="Name:">
-	<p ng-hide="isEmpty()">Hello, {{ name }}!</p>
+  <div class="bottom-border">
+
+    <h1>2 Way Binding</h1>
+    <p>The examples on this page demonstration the powerful 2 way binding that AngularJS so easily implements.</p>
+
+  </div>
+
+  <div class="bottom-border">
+  
+    <h2>Hello, "World"!</h2>
+    <input type="text" ng-model="name" placeHolder="Name:">
+    <b class="lead" ng-hide="isEmpty()">Hello, {{ name }}!</b>
+  
+  </div>
+
+  <div>
+  
+    <h2>Product Total</h2>
+
+    <div class="row">
+      <label for="quantity" class="col-xs-2">Quantity:</label>
+      <input id="quantity" class="col-xs-3" type="number" min="1" ng-model="quantity">
+    </div>
+
+    <div class="row">
+      <label for="price" class="col-xs-2">Price:</label>
+      <input id="price" class="col-xs-3" type="number" min="0" step="0.25" ng-model="price">
+    </div>
+
+    <div>
+      <b class="lead">{{ quantity * price | currency }}</b>
+    </div>
+
+  </div><!--productBinding-->
 
 </div>
