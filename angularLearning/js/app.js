@@ -1,12 +1,10 @@
 angular.module("myApp", ["ngRoute"])
 
 .controller("BindingController", function($scope){
-
   $scope.name = "";
   $scope.isEmpty = function(){
     return $scope.name === "";
   };
-
 })
 
 .controller("NavController", function($scope){
@@ -17,16 +15,33 @@ angular.module("myApp", ["ngRoute"])
 })
 
 .controller("CustomerController", function($scope, $http){
+
   $scope.customers = [];
   $scope.newCustomer = {};
+  $scope.isEditting = false;
 
   $http.get("js/customers.json").success(function(data){
     $scope.customers = data;
   });
 
-  $scope.addCustomer = function(){
-    $scope.customers.push($scope.newCustomer);
-    $scope.newCustomer = {};
+  $scope.addCustomer = function(custToEdit){
+    if ($scope.isEditting === false) {
+      $scope.customers.push($scope.newCustomer);
+      $scope.newCustomer = {};
+    } else {
+      $scope.isEditting = false;
+      $scope.customers[custToEdit] = $scope.newCustomer;
+      $scope.newCustomer = {};
+    }
+  };
+
+  $scope.editCustomer = function(custToEdit){
+    $scope.newCustomer = $scope.customers[custToEdit];
+    $scope.isEditting = true;
+  };
+
+  $scope.removeCustomer = function(custToDelete){
+    $scope.customers.splice(custToDelete, 1)
   };
   
 })

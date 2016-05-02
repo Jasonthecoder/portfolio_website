@@ -18,6 +18,14 @@
         {{ customer.address.city }}
         {{ customer.address.state }}, {{ customer.address.zip }}
       </td>
+      <td>
+        <button class="btn btn-warning" ng-click="editCustomer($index)">
+          <span class="glyphicon glyphicon-plus"></span>
+        </button>
+        <button class="btn btn-danger" ng-click="removeCustomer($index)">
+          <span class="glyphicon glyphicon-remove">
+        </button>
+      </td>
     </tr> 
   </table>
 
@@ -39,7 +47,7 @@
     </div>
 
     <button class="btn btn-primary col-xs-10 col-xs-offset-2" ng-click="addCustomer()">
-      <span class="glyphicon glyphicon-plus"></span>
+      <span ng-class="{ 'glyphicon glyphicon-ok':isEditting, 'glyphicon glyphicon-plus':isEditting===false }"></span>
     </button>
 
   </form>
