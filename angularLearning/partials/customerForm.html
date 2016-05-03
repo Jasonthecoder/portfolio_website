@@ -16,8 +16,8 @@
       <td>{{ customer.phone }}</td>
       <td>
         {{ customer.address.street }} <br>
-        {{ customer.address.city }}
-        {{ customer.address.state }}, {{ customer.address.zip }}
+        {{ customer.address.city }},
+        {{ customer.address.state }} {{ customer.address.zip }}
       </td>
       <td>
         <button class="btn btn-warning" ng-click="editCustomer($index)">
