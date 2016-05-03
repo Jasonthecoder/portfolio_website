@@ -34,7 +34,6 @@ angular.module("myApp", ["ngRoute"])
       $scope.newCustomer = {};
     } else {
       $scope.isEditting = false;
-      $scope.customers[custToEdit] = $scope.newCustomer;
       $scope.newCustomer = {};
     }
   };
