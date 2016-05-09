@@ -1,0 +1,17 @@
+{
+  "name": "angular-template",
+  "version": "1.0.0",
+  "description": "AngularJS Template",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server"
+  },
+  "author": "Matthew Pagan",
+  "dependencies": {
+    "jquery": "latest",
+    "bootstrap": "latest",
+    "angular": "latest",
+    "angular-route": "latest",
+    "http-server": "latest"
+  }
+}

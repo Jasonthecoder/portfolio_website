@@ -1,0 +1,12 @@
+.gallery .gallery-item {
+  width: 100px;
+  height: 100px;
+  float: left;
+  overflow: hidden;
+}
+
+.gallery img {
+  width: 100px;
+  height: auto;
+}
+
